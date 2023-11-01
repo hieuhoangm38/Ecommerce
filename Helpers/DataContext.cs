@@ -16,7 +16,18 @@ public class DataContext : DbContext
     {
         // connect to sql server database
         options.UseSqlServer(Configuration.GetConnectionString("WebApiDatabase"));
+        
     }
 
+
+
     public DbSet<User> Users { get; set; }
+
+    public DbSet<Identify> Identifys { get; set; }
+
+    
+
+    
+
+    //public DbSet<Otp> Otp { get; set; }
 }
